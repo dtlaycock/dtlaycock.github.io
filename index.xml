@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dominic Laycock</title>
+    <link>https://dtlaycock.github.io/</link>
+    <description>Recent content on Dominic Laycock</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Aug 2018 11:52:11 -0500</lastBuildDate>
+    
+	<atom:link href="https://dtlaycock.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Road Trip</title>
+      <link>https://dtlaycock.github.io/posts/road-trip/</link>
+      <pubDate>Mon, 27 Aug 2018 11:52:11 -0500</pubDate>
+      
+      <guid>https://dtlaycock.github.io/posts/road-trip/</guid>
+      <description>A thousand miles of corn I was looking forward to seeing more of the country. Since moving to the USA I&amp;rsquo;ve primarily visited places for conferences or winter sports. Moving to the Hudson Valley has made travel easier, but we have not explored much beyond New York and neighboring states. Driving across the country would be a great opportunity to see more.
+Our home life in the Hudson Valley centers around real food.</description>
+    </item>
+    
+  </channel>
+</rss>
