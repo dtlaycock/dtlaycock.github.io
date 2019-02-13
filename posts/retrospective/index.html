@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+
+<!-- 
+Strata by HTML5 UP
+html5up.net | @n33co
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>13 year retrospective &middot; Dominic Laycock</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="author" content="Dominic Laycock">
+		<meta name="description" content="A personal web site and blog for showcasing previous work, current thinking and future goals">
+		<meta http-equiv="content-language" content="en-us" />
+
+		
+		<meta name="og:site_name" content="Dominic Laycock">
+		<meta name="og:title" content="13 year retrospective">
+		<meta name="og:url" content="https://dtlaycock.com/posts/retrospective/">
+		
+		<meta name="og:image" content="https://dtlaycock.com/images/dom-profile-small.jpeg">
+		
+		
+
+		<meta name="generator" content="Hugo 0.53" />
+
+		<!--[if lte IE 8]><script src='https://dtlaycock.com/js/ie/html5shiv.js'></script><![endif]-->
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://dtlaycock.com/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="https://dtlaycock.com//css/ie8.css"><![endif]-->
+
+		
+		
+	</head>
+
+	<body id="top">
+		<!-- Header -->
+<header id="header">
+	
+	<a href="https://dtlaycock.com/" class="image avatar"><img src="https://dtlaycock.com/images/dom-profile-small.jpeg" alt="" /></a>
+	
+	
+		<h1><strong>I&rsquo;m Dom</strong>, technologist, food lover, and pursuer of beauty outdoors.</h1>
+	
+
+	
+		<nav id="sidebar">
+			<ul>
+			
+				<li><a href="https://dtlaycock.com/">Home</a></li>
+			
+				<li><a href="https://dtlaycock.com/posts/">Blog</a></li>
+			
+			</ul>
+		</nav>
+	
+</header>
+
+
+		<!-- Main -->
+		<div id="main">
+			
+	<article>
+		<header>
+			<h1>13 year retrospective</h1>
+
+			
+<i class="fa fa-calendar"></i>&nbsp;&nbsp;
+<time datetime="2019-01-24 11:21:14 -0500 EST">2019-01-24</time>&nbsp;&nbsp;
+
+
+
+
+
+
+
+
+		</header>
+
+		<p>
+			<p>Thirteen years is a long time to work with one company. I joke that my years at <em>The Economist</em> were equivalent to a prison sentence and I was up for parole. The truth is, I am grateful for the valuable and varied experiences I had during those years. The technology tools changed so radically, I didn&rsquo;t need to leave. During that time, I had four completely different jobs working on transformational teams.</p>
+
+<p>In 2005, I joined the Economist Intelligence Unit (EIU) in London as a developer. I worked on an in-house templating system publishing the country analysis reports. This was familiar technology, so after two years I was ready for a change. Rather than send out resumes, I was honest with my team about wanting new technology challenges. Soon after, I was offered a role on the economist.com (DotCom) team.</p>
+
+<p>Web development was a new career, for me and most of the people doing it.  The DotCom site used a custom content management system (CMS) with ColdFusion handling the web application. The learning curve was steep and the inner workings of the CMS were particularly arcane. It took me nearly a year to feel confident in my skills. Soon after, another big change came along.</p>
+
+<p>This change was even more radical, transforming the engineering team, technology stack, applied software, and approach to engineering delivery. We simultaneously transitioned from a Cold Fusion development team to an open-source-contributing Drupal team, from ColdFusion and Oracle to PHP and MySQL, and from waterfall delivery to Agile scrum. Surprisingly, despite the magnitude of the changes, the transformation worked beautifully. Many of the people involved at that time still refer to it as the golden age. It was my first experience of empowered teams working collaboratively on big challenges with a clear sense of purpose. That remains my goal for teams.</p>
+
+<p>Rebuilding the site in Drupal was a journey, and like many technology journeys, it took longer than expected. The time was well spent. We allied with heavy hitters from the Drupal community to augment and ramp up the skills of our in-house engineers.  A continuous migration of content and user data enabled us to keep the old site and new site running in parallel, so we could move features piece by piece until what remained wasn&rsquo;t worth the cost of maintaining the old site. That strangler pattern is a common approach today, especially when breaking down monolithic systems.  Ironically, another monolith is exactly where we were heading.</p>
+
+<p>Yes, Drupal is a very flexible framework and at the time, it made sense to build everything in it. Most big websites were (are) driven by one application. Now, I would argue that any single piece of software becoming &ldquo;the solution&rdquo; to diverse problems is a bad thing. Inflexibility creeps up on you and before you know it, the overhead for creating anything else, outside the core codebase, costs more than any single initiative can justify.</p>
+
+<p>Five years of &ldquo;projects&rdquo;, big and small, built inside the same codebase makes them inextricably dependent on each other. Business critical functionality and stability in one part of the codebase stifles the ambitions of smaller, more experimental features.  Meanwhile, the Drupal community moved on to new versions and fewer people were available to develop new functionality and maintain the old code.</p>
+
+<p>We couldn&rsquo;t upgrade without completely rebuilding. We couldn&rsquo;t keep building on the old codebase. Change
+was becoming a top priority, but another like-for-like rebuild was unpalatable and wouldn&rsquo;t solve the underlying challenge. We needed to break up the monolith.</p>
+
+<p>In 2015, after the front-end team demonstrated its viability, we decided to build a decoupled site, within AWS, embracing continuous deployment from the start. Decoupled sites weren&rsquo;t a new idea by then. At my first Drupal event, I saw a presentation on using Drupal to feed a flash site. But we weren&rsquo;t simply plugging in a different rendering layer. We were building an abstraction layer that would consolidate access to multiple content stores (including the Drupal site). The website as well as all new products, apps and channels would be served by the various microservices created, which became known as the Content Platform (CP).</p>
+
+<p>I took on a new role as Head of the Content Platform. The remaining Drupal team transformed, again, into CP engineers. This time, moving from open-source PHP application development to building an AWS-native platform, with microservices written in Golang. That also required transforming from a silo mentality to DevOps approach. And again, the results were outstanding.</p>
+
+<p>The CP team of in-house and GlobalLogic engineers were the best engineering team I&rsquo;ve worked with, and in my time at <em>The Economist</em> I&rsquo;ve worked with great teams.  The AWS services the platform leverages and the enterprise integration patterns that govern them have been fascinating to grow. After a decade inside a monolith, it was eye-opening to build complex interdependent technologies without burying ourselves under a mound of software and maintenance.</p>
+
+<p>Managing a platform from its inception to maturity was a new challenge and equally rewarding. Valuing the technology not only for its own sake but also meeting the goals of consumers, products and other engineering teams. The challenge of crafting a roadmap that balances those goals with the long-term vision for a feature-full platform of re-useable services was an enticing challenge.  Steering the platform through this evolution and watching it strengthen as we added more services, content sources, distribution channels and consumers was a career high point.</p>
+
+<p>Now though, the organization itself is transitioning and it&rsquo;s time for me to move onto new challenges. I would have liked to do more with the CP but I know it will be a stabilizing influence during periods of uncertainty. Most of the people I want to thank are no longer with the company, so through this post, I want them to know that I am grateful them for being inspiring colleagues and creating valuable opportunities, like introducing agile and the many transformative technology changes that kept me growing. I am grateful for thirteen years that went by fast.</p>
+
+<p>And now, a chapter ends. A new one begins.</p>
+
+		</p>
+	</article>
+
+	
+
+		</div>
+
+		<!-- Footer -->
+<footer id="footer">
+	<ul class="icons">
+		
+		
+		
+		<li><a href="//twitter.com/dtlaycock" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+		
+		
+		<li><a href="//github.com/dtlaycock" target="_blank" class="icon fa-github"><span class="label">GitHub</span></a></li>
+		
+		
+		
+		<li><a href="//linkedin.com/in/dom-laycock" target="_blank" class="icon fa-linkedin-square"><span class="label">Linkedin</span></a></li>
+		
+		
+		
+		
+		
+		<li><a href="https://dtlaycock.com/index.xml" class="icon fa-rss" type="application/rss+xml"><span class="label">RSS</span></a></li>
+		
+	</ul>
+
+	<ul class="copyright">
+		
+		<li>&copy; Dominic Laycock</li>
+		
+		<li>Design: <a href="//html5up.net">HTML5 UP</a></li>
+		
+	</ul>
+</footer>
+
+<!-- Scripts -->
+<script src="https://dtlaycock.com/js/jquery.min.js"></script>
+<script src="https://dtlaycock.com/js/jquery.poptrox.min.js"></script>
+<script src="https://dtlaycock.com/js/skel.min.js"></script>
+<script src="https://dtlaycock.com/js/util.js"></script>
+
+<script src="https://dtlaycock.com/js/main.js"></script>
+
+
+
+
+
+	</body>
+</html>
